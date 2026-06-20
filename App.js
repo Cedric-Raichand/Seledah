@@ -3,7 +3,7 @@ import { View, Text, StyleSheet} from "react-native";
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Hello Cedric 👋</Text>
+      <Text style={styles.text}>Hello Cedric Raichand</Text>
     </View>
   );
 }
@@ -16,7 +16,7 @@ export default function Home() {
       backgroundColor:"yellow",
     },
     text:{
-      color:"blue",
+      color:"black",
       fontSize:50,
       fontWeight:"bold",
     },
