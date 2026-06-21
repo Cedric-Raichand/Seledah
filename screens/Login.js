@@ -1,8 +1,8 @@
-import { View, Text, Button } from "react-native";
+import { View, Text, Button, StyleSheet } from "react-native";
 
 export default function Login({ navigation }) {
   return (
-    <View>
+    <View style={book.first}>
       <Text>Login Screen</Text>
 
       <Button
@@ -12,3 +12,12 @@ export default function Login({ navigation }) {
     </View>
   );
 }
+
+const book = StyleSheet.create({
+    first:{
+        backgroundColor:"yellow",
+        alignItems:"center",
+        justifyContent:"center",
+        flex:1
+    }
+})
