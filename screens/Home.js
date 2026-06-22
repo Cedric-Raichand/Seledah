@@ -16,7 +16,7 @@ const book = StyleSheet.create({
         backgroundColor:"lightgreen"
     },
     inner:{
-        fontSize:30,
+        fontSize:28,
         color:"blue"
 
     }
