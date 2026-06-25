@@ -15,7 +15,7 @@ export default function Login({ navigation }) {
 
 const book = StyleSheet.create({
     first:{
-        backgroundColor:"yellow",
+        backgroundColor:"green",
         alignItems:"center",
         justifyContent:"center",
         flex:1

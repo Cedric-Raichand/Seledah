@@ -22,3 +22,19 @@ const styles = StyleSheet.create({
 })
 
 
+const book = StyleSheet.create({
+    outer:{
+        flex:1,
+        alignItems:"center",
+        justifyContent:"center",
+        backgroundColor:"lightgreen"
+    },
+    inner:{
+        fontSize:25,
+        color:"blue"
+
+    }
+
+})
+
+
