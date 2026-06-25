@@ -6,10 +6,19 @@ export default function Home() {
 
   
     <View>
-      <Text>Home Screen for trial cedr </Text>
+      <Text style={styles.out}>Home Screen for trial cedr </Text>
     </View>
     </ImageBackground>
   );
 }
+const styles = StyleSheet.create({
+  out:{
+    textAlign:"center",
+    justifyContent:"center",
+    marginTop:20,
+    color:"red"
+  },
+  
+})
 
 
