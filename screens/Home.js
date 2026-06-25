@@ -1,24 +1,15 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ImageBackground } from "react-native";
 
 export default function Home() {
   return (
-    <View style={book.outer}>
-      <Text style = {book.inner}>Home Screen for trial</Text>
+    <ImageBackground source = {require("../assets/unsplash_-GFCYhoRe48.png")} style={{flex:1}}>
+
+  
+    <View>
+      <Text>Home Screen for trial cedr </Text>
     </View>
+    </ImageBackground>
   );
 }
 
-const book = StyleSheet.create({
-    outer:{
-        flex:1,
-        alignItems:"center",
-        justifyContent:"center",
-        backgroundColor:"lightgreen"
-    },
-    inner:{
-        fontSize:30,
-        color:"blue"
 
-    }
-
-})
