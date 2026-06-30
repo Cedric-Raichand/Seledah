@@ -13,7 +13,10 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="Profile" component={Profile} options={{
+          headerTransparent:true,
+          headerTitle:"Profile"
+        }}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
