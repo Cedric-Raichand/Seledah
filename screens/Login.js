@@ -1,23 +1,13 @@
-import { View, Text, Button, StyleSheet } from "react-native";
+import {View, Button, StyleSheet, Text} from "react-native"
 
-export default function Login({ navigation }) {
-  return (
-    <View style={book.first}>
-      <Text>Login Screen</Text>
-
+export default function Login({navigation}){
+  return(
+    <View>
       <Button
-        title="Go to Home"
-        onPress={() => navigation.navigate("Home")}
-      />
+      title="GO TO HOME"
+      onPress={()=>navigation.navigate("Home")}/>
     </View>
-  );
+  )
 }
 
-const book = StyleSheet.create({
-    first:{
-        backgroundColor:"green",
-        alignItems:"center",
-        justifyContent:"center",
-        flex:1
-    }
-})
+
