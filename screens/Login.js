@@ -1,11 +1,13 @@
-import {View, Button, StyleSheet, Text} from "react-native"
+import {View, Button, StyleSheet, Text,TextInput} from "react-native"
+import { useState } from "react"
 
-export default function Login({navigation}){
+export default function Login(){
+  const [username, setUsername] = useState("");
   return(
     <View>
-      <Button
-      title="GO TO HOME"
-      onPress={()=>navigation.navigate("Home")}/>
+      <TextInput placeholder="Enter username"
+      onChangeText={setUsername}/>
+      <Text>{username}</Text>
     </View>
   )
 }
