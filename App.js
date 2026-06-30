@@ -11,8 +11,14 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Login" component={Login} options={{
+          headerTransparent:true,
+          headerTitle:"Login"
+        }} />
+        <Stack.Screen name="Home" component={Home} options={{
+          headerTransparent:true,
+          headerTitle:"Home"
+        }} />
         <Stack.Screen name="Profile" component={Profile} options={{
           headerTransparent:true,
           headerTitle:"Profile"

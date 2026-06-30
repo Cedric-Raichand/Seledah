@@ -1,4 +1,4 @@
-import {View, Button, StyleSheet, Text,TextInput} from "react-native"
+import {View, Button, StyleSheet, Text,TextInput,TouchableOpacity} from "react-native"
 import { useState } from "react"
 
 export default function Login({navigation}){
@@ -19,11 +19,15 @@ export default function Login({navigation}){
       </Text>
 
       <TextInput placeholder="Username" onChangeText={setUsername} style={styles.input}/>
-      <TextInput placeholder="Password" onChangeText={setPassword} style={styles.output}/>
+      <TextInput placeholder="Password" secureTextEntry onChangeText={setPassword} style={styles.output}/>
 
-      <Button 
-      title="login"
-      onPress={loginUser} style={styles.you}/>
+      <TouchableOpacity
+      style={styles.loginbutton}
+      onPress={loginUser}>
+        <Text style = {styles.buttontext}>
+          LOGIN
+        </Text>
+        </TouchableOpacity>
     </View>
   )
 }
@@ -44,10 +48,22 @@ const styles = StyleSheet.create({
     height:50,
     borderWidth:1,
     borderRadius:10,
+    marginTop:20,
+    marginBottom:20
+  },
+  loginbutton:{
+    width:300,
+    height:50,
+    backgroundColor:"black",
+    borderRadius:10,
+    justifyContent:"center",
+    alignItems:"center",
     marginTop:20
   },
-  you:{
-    marginTop:20
+  buttontext:{
+    color:"white",
+    fontSize:18,
+    fontWeight:"bold"
   }
 })
 
