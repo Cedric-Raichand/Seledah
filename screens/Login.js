@@ -1,9 +1,11 @@
 import {View, Button, StyleSheet, Text,TextInput,TouchableOpacity} from "react-native"
 import { useState } from "react"
+import {Ionicons} from "@expo/vector-icons"
 
 export default function Login({navigation}){
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setshowPassword] = useState(false)
   function loginUser(){
     if (username==="Cedric" && password=="1234"){
       navigation.navigate("Home");
@@ -14,12 +16,14 @@ export default function Login({navigation}){
   }
   return(
     <View style ={styles.container}>
-      <Text>
-        login page
-      </Text>
 
       <TextInput placeholder="Username" onChangeText={setUsername} style={styles.input}/>
-      <TextInput placeholder="Password" secureTextEntry onChangeText={setPassword} style={styles.output}/>
+      <TextInput placeholder="Password" secureTextEntry ={!showPassword} onChangeText={setPassword} style={styles.output}/>
+
+      <Ionicons
+      name={showPassword ? "eye" : "eye-off"}
+      size={25}
+      onPress={()=>setshowPassword(!showPassword)}/>
 
       <TouchableOpacity
       style={styles.loginbutton}
